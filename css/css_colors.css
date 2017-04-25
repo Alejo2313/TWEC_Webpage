@@ -1,0 +1,26 @@
+
+header{
+    text-align: left;
+    margin-bottom: 0;
+}
+
+
+.active a{
+    background-color: #6DE7F6 !important;
+    border-color: grey !important ;
+}
+.btn{
+    background-color: #6DE7F6 !important ;
+    color: #0f0f0f !important
+
+
+    }
+.panel-heading {
+    background-color: #6DE7F6 !important;
+    color: #0f0f0f !important;
+    border: none !important;
+}
+.panel-primary{
+    border-color: grey !important ;
+}
+
