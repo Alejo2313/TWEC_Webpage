@@ -6,11 +6,28 @@ reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1
 var error = [true, true, true, true]
 
 $(document).ready(function(){
+
     $('#nav').affix({
         offset: {
             top: $('header').height()
         }
     });
+
+    $(".nav li").removeClass("active");
+    $('.nav a[href*="'+$("title").text()+'"]').parent().addClass('active');
+
+
+
+    $("#login").click(function () {
+        if ($(window).width() <= 728) {
+            window.open("/login/")
+        }
+        });
+    $("#login").dblclick(function () {
+       window.open("/login/");
+    });
+
+
     $("#Enviar").click(function(){
         if($('#term').is(':checked') && !error[0] && !error[1] && !error[2] && !error[3]){
             $("#form").submit();

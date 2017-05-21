@@ -1,12 +1,10 @@
-#jumbotron {
-    margin-bottom: 0;
 
-}
 .navbar {
     margin-bottom: 50px;
     border-radius: 0;
+
 }
-.offer{
+.offder{
     margin-left: 20px;
     margin-bottom: 20px;
 }
@@ -20,11 +18,23 @@
     width:auto;
 }
 
-header {
-    height:280px;
-    background-color:#eee;
+.brand-title{
+    font-size: xx-large;
+    text-align: center;
 }
+.left-text{
+    font-size: medium;
+    text-align: center;
 
+}
+@media (min-width: 992px)
+{
+    .left-text{
+        font-size: medium;
+        text-align: center;
+        padding-top: 15px;
+    }
+}
 #nav.affix {
     position: fixed;
     top: 0;
@@ -32,7 +42,25 @@ header {
     z-index:10;
 }
 footer {
-    background-color: #f2f2f2;
     padding: 25px;
     margin-top:50px;
 }
+#myCarousel{
+    //margin-tdop: 10px;
+}
+#login-menu{
+    min-width: 300px;
+    padding: 14px;
+    overflow:hidden;
+}
+.navbar{
+    margin-bottom: 0 !important;
+}
+.carousel-indicators{
+    z-index: 9 !important;
+}
+.btn-md{
+    margin: 5px;
+    overflow: hidden;
+}
+
