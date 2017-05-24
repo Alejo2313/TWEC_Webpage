@@ -1,3 +1,11 @@
+
+<?php
+    $_PNAME="Tienda";
+    $_ACTIVE="/shop";
+    include "../layout/header.php";
+?>
+
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-3 col-md-3 " id="static">
@@ -145,8 +153,17 @@
                 <h1>
                     Accordion Menu With Icon</h1>
                 Admin Dashboard Accordion Menu
-                <?php echo $_GET["items"]?>
+                <?php echo $_GET["items"];
+                include "list.php";
+
+                ?>
+
             </div>
         </div>
     </div>
 </div>
+
+
+<?php
+    include "../layout/footer.php";
+?>
